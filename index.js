@@ -1,3 +1,12 @@
-git add .
-git commit -m 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
-git push origin main
+require('dotenv').config(); // Carrega as variáveis de ambiente do arquivo .env
+const { Configuration, OpenAIApi } = require('openai');
+
+const configuration = new Configuration({
+  apiKey: process.env.OPENAI_API_KEY, // Usa a chave API da variável de ambiente
+});
+
+const openai = new OpenAIApi(configuration);
+
+console.log("Hello, Eve!");
+
+// Adicione sua lógica para interagir com a API da OpenAI aqui
