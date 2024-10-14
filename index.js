@@ -1,3 +1,3 @@
 git add .
-git commit -m "Adiciona código para integração com a API da OpenAI"
+git commit -m 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
 git push origin main
